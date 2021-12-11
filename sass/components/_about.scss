@@ -1,24 +1,24 @@
 .about {
     display: flex;
   }
-  .about-list {
+  .about__list {
     width: calc((100% - 90px) / 4);
   }
-  .about-list:not(last-child) {
+  .about__list:not(last-child) {
     margin-right: 30px;
   }
-  .about-item {
+  .about__item {
     margin-bottom: 10px;
     color: var(--main-text-color);
     font-weight: bold;
     line-height: 1.14;
     text-transform: uppercase;
   }
-  .about-text {
+  .about__text {
     font-weight: normal;
     line-height: 1.71;
   }
-  .about-block {
+  .about__block {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -28,7 +28,7 @@
     border-radius: 4px;
     background-color: #f5f4fa;
   }
-  .about-icon {
+  .about__icon {
     width: 70px;
     height: 70px;
   }

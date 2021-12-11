@@ -4,13 +4,13 @@
 .team-content {
   display: flex;
 }
-.team-list:not(:last-child) {
+.team-content-list:not(:last-child) {
   margin-right: 30px;
 }
-.team-list {
+.team-content-list {
   background-color: var(--third-text-color);
 }
-.team-list-img {
+.team-content-img {
   margin-bottom: 30px;
 }
 .team-title {
@@ -21,7 +21,7 @@
   text-align: center;
   margin-bottom: 59px;
 }
-.team-item {
+.team-content-iteam {
   color: var(--main-text-color);
   font-weight: 500;
   font-size: 16px;
@@ -29,7 +29,7 @@
   text-align: center;
   margin-bottom: 10px;
 }
-.team-text {
+.team-content-text {
   color: var(--second-text-color);
   font-weight: normal;
   font-size: 16px;
