@@ -6,14 +6,14 @@
     display: flex;
     align-items: center;
   }
-  .navig-list {
+  .navig__list {
     display: flex;
     margin-left: 93px;
   }
-  .navig-list-item:not(:last-child) {
+  .navig__item:not(:last-child) {
     margin-right: 50px;
   }
-  .navig-list-item{
+  .navig__item{
     position: relative;
   }
   .logo {
@@ -22,13 +22,13 @@
     font-size: 26px;
     line-height: 1.19;
   }
-  .logo-left {
+  .logo__left {
     color: var(--acent-color);
   }
-  .logo-right {
+  .logo__right {
     color: var(--other-color);
   }
-  .navig-link {
+  .navig__link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -77,39 +77,39 @@
     display: flex;
     margin-left: auto;
   }
-  .address-list {
+  .address__list {
     display: flex;
     align-items: center;
   }
-  .address-list:not(:last-child) {
+  .address__list:not(:last-child) {
     margin-right: 43px;
   }
-  .address-list-link:hover,
-  .address-list-link:focus {
+  .address__link:hover,
+  .address__link:focus {
     color: var(--acent-color);
   }
-  .address-list-link {
+  .address__link {
     color: var(--second-text-color);
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     transition: color 250ms var(--animation-cubic-bezier);
   }
-  .address-email-icon {
+  .address__email {
     vertical-align: middle;
     width: 16px;
     height: 12px;
     margin-right: 10px;
     fill: currentColor;
   }
-  .address-phone-icon {
+  .address__phone {
     vertical-align: middle;
     margin-right: 10px;
     height: 16px;
     width: 10px;
     fill: currentColor;
   }
-  .address-phone-icon:hover {
+  .address__phone:hover {
     color: var(--acent-color);
   }
   .object {
