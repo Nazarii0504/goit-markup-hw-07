@@ -88,7 +88,7 @@ code,
 kbd,
 samp,
 pre {
-  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
+  font-family: ui-monospace, SFMono-Regular, Consolas, 'Liberation Mono', Menlo, monospace;
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -599,7 +599,7 @@ body {
   height: 70px;
 }
 
-.work {
+.work-content--dis {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -607,11 +607,11 @@ body {
   width: calc((100% - 60) / 3);
 }
 
-.work:not(:last-child) {
+.work-content--dis:not(:last-child) {
   margin-right: 30px;
 }
 
-.block-content {
+.work-content__block {
   position: absolute;
   bottom: 0;
   min-width: 364px;
@@ -620,7 +620,7 @@ body {
   background-color: rgba(47, 48, 58, 0.8);
 }
 
-.block-content-text {
+.work-content__text {
   color: var(--third-text-color);
   font-weight: 700;
   line-height: 1.145;
@@ -643,11 +643,11 @@ body {
   position: relative;
 }
 
-.work-list {
+.work-content__list {
   width: calc((100% -60px) / 3);
 }
 
-.work-list:not(:last-child) {
+.work-content__list:not(:last-child) {
   margin-right: 30px;
 }
 
