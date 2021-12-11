@@ -518,7 +518,7 @@ body {
   text-align: center;
 }
 
-.upmain-title {
+.upmain__title {
   margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
@@ -529,7 +529,7 @@ body {
   color: var(--third-text-color);
 }
 
-.upmain-button {
+.upmain__button {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 32px;
@@ -548,6 +548,7 @@ body {
   transition: -webkit-box-shadow 250ms var(--animation-cubic-bezier);
   transition: box-shadow 250ms var(--animation-cubic-bezier);
   transition: box-shadow 250ms var(--animation-cubic-bezier), -webkit-box-shadow 250ms var(--animation-cubic-bezier);
+  cursor: pointer;
 }
 
 .about {

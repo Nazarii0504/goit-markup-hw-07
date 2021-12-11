@@ -17,7 +17,7 @@
     padding-bottom: 200px;
     text-align: center;
   }
-  .upmain-title {
+  .upmain__title {
     margin-bottom: 30px;
     font-weight: 900;
     font-size: 44px;
@@ -27,7 +27,7 @@
     text-transform: uppercase;
     color: var(--third-text-color);
   }
-  .upmain-button {
+  .upmain__button {
     padding-top: 10px;
     padding-bottom: 10px;
     padding-left: 32px;
@@ -42,4 +42,5 @@
     line-height: 1.87;
     letter-spacing: 0.06em;
     transition: box-shadow 250ms var(--animation-cubic-bezier);
+    cursor: pointer;
   }
