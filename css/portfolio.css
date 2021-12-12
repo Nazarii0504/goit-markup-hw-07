@@ -1,14 +1,3 @@
-:root {
-  --main-text-color: #212121;
-  --second-text-color: #757575;
-  --third-text-color: #ffffff;
-  --acent-color: #2196f3;
-  --other-color: #000000;
-  --fon-color: rgba(255, 255, 255, 0.6);
-  --animation-cubic-bezier:cubic-bezier(0.4, 0, 0.2, 1)
-  ;
-}
-
 /*! modern-normalize v1.1.0 | MIT License | https://github.com/sindresorhus/modern-normalize */
 /*
 Document
@@ -318,7 +307,7 @@ ul {
 }
 
 body {
-  color: var(--main-text-color);
+  color: #212121;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   letter-spacing: 0.03em;
@@ -364,17 +353,17 @@ body {
   border-radius: 4px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  background-color: var(--acent-color);
-  color: var(--third-text-color);
+  background-color: #2196f3;
+  color: #ffffff;
   font-family: Roboto;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.06em;
-  -webkit-transition: -webkit-box-shadow 250ms var(--animation-cubic-bezier);
-  transition: -webkit-box-shadow 250ms var(--animation-cubic-bezier);
-  transition: box-shadow 250ms var(--animation-cubic-bezier);
-  transition: box-shadow 250ms var(--animation-cubic-bezier), -webkit-box-shadow 250ms var(--animation-cubic-bezier);
+  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .flex-box {
@@ -418,18 +407,18 @@ body {
 }
 
 .logo__left {
-  color: var(--acent-color);
+  color: #2196f3;
 }
 
 .logo__right {
-  color: var(--other-color);
+  color: #000000;
 }
 
 .navig__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  color: var(--main-text-color);
+  color: #212121;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -437,11 +426,11 @@ body {
 
 .navig-link:hover,
 .navig-link:focus {
-  color: var(--acent-color);
+  color: #2196f3;
 }
 
 .current {
-  color: var(--acent-color);
+  color: #2196f3;
 }
 
 .current-portfolio::after,
@@ -452,9 +441,9 @@ body {
   left: 0;
   border-radius: 4px;
   height: 4px;
-  background-color: var(--acent-color);
-  -webkit-transition: background-color 250ms var(--animation-cubic-bezier);
-  transition: background-color 250ms var(--animation-cubic-bezier);
+  background-color: #2196f3;
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .current-studio::after {
@@ -487,16 +476,16 @@ body {
 
 .address__link:hover,
 .address__link:focus {
-  color: var(--acent-color);
+  color: #2196f3;
 }
 
 .address__link {
-  color: var(--second-text-color);
+  color: #757575;
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  -webkit-transition: color 250ms var(--animation-cubic-bezier);
-  transition: color 250ms var(--animation-cubic-bezier);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .address__email {
@@ -516,7 +505,7 @@ body {
 }
 
 .address__phone:hover {
-  color: var(--acent-color);
+  color: #2196f3;
 }
 
 .object {
@@ -539,21 +528,21 @@ body {
   padding-bottom: 6px;
   padding-left: 22px;
   border-radius: 4px;
-  color: var(--main-text-color);
+  color: #212121;
   font-family: Roboto;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   background-color: #f5f4fa;
-  -webkit-transition: color 250ms var(--animation-cubic-bezier), background-color 250ms var(--animation-cubic-bezier);
-  transition: color 250ms var(--animation-cubic-bezier), background-color 250ms var(--animation-cubic-bezier);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 
 .hero__btn:focus {
-  color: var(--third-text-color);
-  background-color: var(--acent-color);
+  color: #ffffff;
+  background-color: #2196f3;
 }
 
 .hero__item:not(:last-child) {
@@ -561,8 +550,8 @@ body {
 }
 
 .hero__btn:hover {
-  color: var(--third-text-color);
-  background-color: var(--acent-color);
+  color: #ffffff;
+  background-color: #2196f3;
 }
 
 .gallery {
@@ -575,11 +564,11 @@ body {
 
 .gallery__list {
   width: calc((100% - 60px) / 3);
-  background-color: var(--third-text-color);
-  -webkit-transition: -webkit-box-shadow 250ms var(--animation-cubic-bezier);
-  transition: -webkit-box-shadow 250ms var(--animation-cubic-bezier);
-  transition: box-shadow 250ms var(--animation-cubic-bezier);
-  transition: box-shadow 250ms var(--animation-cubic-bezier), -webkit-box-shadow 250ms var(--animation-cubic-bezier);
+  background-color: #ffffff;
+  -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .gallery__list:not(:nth-child(3n)) {
@@ -612,15 +601,15 @@ body {
   background-color: rgba(33, 150, 243, 0.9);
   -webkit-transform: translateY(100%);
           transform: translateY(100%);
-  -webkit-transition: opacity 250ms var(--animation-cubic-bezier), -webkit-transform 250ms var(--animation-cubic-bezier), -webkit-box-shadow 250ms var(--animation-cubic-bezier);
-  transition: opacity 250ms var(--animation-cubic-bezier), -webkit-transform 250ms var(--animation-cubic-bezier), -webkit-box-shadow 250ms var(--animation-cubic-bezier);
-  transition: transform 250ms var(--animation-cubic-bezier), opacity 250ms var(--animation-cubic-bezier), box-shadow 250ms var(--animation-cubic-bezier);
-  transition: transform 250ms var(--animation-cubic-bezier), opacity 250ms var(--animation-cubic-bezier), box-shadow 250ms var(--animation-cubic-bezier), -webkit-transform 250ms var(--animation-cubic-bezier), -webkit-box-shadow 250ms var(--animation-cubic-bezier);
+  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   opacity: 0;
 }
 
 .gallery__block--text {
-  color: var(--third-text-color);
+  color: #ffffff;
   font-size: 18px;
   line-height: 1.55;
 }
@@ -636,14 +625,14 @@ body {
   padding-right: 24px;
   padding-bottom: 20px;
   padding-left: 24px;
-  background-color: var(--third-text-color);
+  background-color: #ffffff;
   border-right: 1px solid #eeeeee;
   border-bottom: 1px solid #eeeeee;
   border-left: 1px solid #eeeeee;
 }
 
 .gallery__item {
-  color: var(--main-text-color);
+  color: #212121;
   font-family: Roboto;
   font-weight: bold;
   font-size: 18px;
@@ -653,7 +642,7 @@ body {
 }
 
 .gallery__text {
-  color: var(--second-text-color);
+  color: #757575;
   font-family: Roboto;
   font-weight: normal;
   font-size: 16px;
@@ -672,7 +661,7 @@ body {
 }
 
 .product__logotype-left {
-  color: var(--acent-color);
+  color: #2196f3;
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
@@ -680,7 +669,7 @@ body {
 }
 
 .product__logotype-right {
-  color: var(--third-text-color);
+  color: #ffffff;
   font-family: Raleway;
   font-weight: bold;
   font-size: 26px;
@@ -688,22 +677,22 @@ body {
 }
 
 .product__text {
-  color: var(--fon-color);
+  color: rgba(255, 255, 255, 0.6);
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
   line-height: 2;
-  -webkit-transition: color 250ms var(--animation-cubic-bezier);
-  transition: color 250ms var(--animation-cubic-bezier);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .product__text:hover {
-  color: var(--third-text-color);
+  color: #ffffff;
 }
 
 .product__text:focus {
-  color: var(--third-text-color);
+  color: #ffffff;
 }
 
 .product__link {
@@ -711,17 +700,17 @@ body {
   font-style: normal;
   font-weight: normal;
   line-height: 2;
-  color: var(--fon-color);
-  -webkit-transition: color 250ms var(--animation-cubic-bezier);
-  transition: color 250ms var(--animation-cubic-bezier);
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .product__link:hover {
-  color: var(--third-text-color);
+  color: #ffffff;
 }
 
 .product__link:focus {
-  color: var(--third-text-color);
+  color: #ffffff;
 }
 
 .product__phone {
@@ -729,17 +718,17 @@ body {
   font-style: normal;
   font-weight: normal;
   line-height: 2;
-  color: var(--fon-color);
-  -webkit-transition: color 250ms var(--animation-cubic-bezier);
-  transition: color 250ms var(--animation-cubic-bezier);
+  color: rgba(255, 255, 255, 0.6);
+  -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .product__phone:hover {
-  color: var(--third-text-color);
+  color: #ffffff;
 }
 
 .product__phone:focus {
-  color: var(--third-text-color);
+  color: #ffffff;
 }
 
 .footer__items {
@@ -769,7 +758,7 @@ body {
   width: 700px;
   line-height: 1.72;
   size: 14px;
-  color: var(--third-text-color);
+  color: #ffffff;
 }
 
 .footer__block:not(:last-child) {
@@ -791,16 +780,16 @@ body {
           align-items: center;
   fill: #afb1b8;
   background-color: rgba(255, 255, 255, 0.1);
-  -webkit-transition: background-color 250ms var(--animation-cubic-bezier), fill 250ms var(--animation-cubic-bezier), -webkit-box-shadow 250ms var(--animation-cubic-bezier);
-  transition: background-color 250ms var(--animation-cubic-bezier), fill 250ms var(--animation-cubic-bezier), -webkit-box-shadow 250ms var(--animation-cubic-bezier);
-  transition: background-color 250ms var(--animation-cubic-bezier), fill 250ms var(--animation-cubic-bezier), box-shadow 250ms var(--animation-cubic-bezier);
-  transition: background-color 250ms var(--animation-cubic-bezier), fill 250ms var(--animation-cubic-bezier), box-shadow 250ms var(--animation-cubic-bezier), -webkit-box-shadow 250ms var(--animation-cubic-bezier);
+  -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer__link:hover,
 .footer__link:focus {
-  background-color: var(--acent-color);
-  fill: var(--third-text-color);
+  background-color: #2196f3;
+  fill: #ffffff;
   -webkit-box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -829,7 +818,7 @@ body {
   size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  color: var(--third-text-color);
+  color: #ffffff;
 }
 
 .third-form__inner {
@@ -871,6 +860,6 @@ body {
   margin-left: 10px;
   width: 24px;
   height: 24px;
-  fill: var(--third-text-color);
+  fill: #ffffff;
 }
 /*# sourceMappingURL=portfolio.css.map */

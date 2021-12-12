@@ -5,8 +5,8 @@
   .gallery__list {
     width: calc((100% - 60px) / 3);
     
-    background-color: var(--third-text-color);
-    transition: box-shadow 250ms var(--animation-cubic-bezier);
+    background-color: $third-text-color;
+    transition: box-shadow 250ms $animation-cubic-bezier;
   }
   .gallery__list:not(:nth-child(3n)) {
     margin-right: 30px;
@@ -37,13 +37,13 @@
    
     background-color: rgba(33, 150, 243, 0.9);
     transform: translateY(100%);
-    transition: transform 250ms var(--animation-cubic-bezier),
-    opacity 250ms var(--animation-cubic-bezier), box-shadow 250ms var(--animation-cubic-bezier);
+    transition: transform 250ms $animation-cubic-bezier,
+    opacity 250ms $animation-cubic-bezier, box-shadow 250ms $animation-cubic-bezier;
     opacity: 0;
   }
   
   .gallery__block--text {
-    color: var(--third-text-color);
+    color: $third-text-color;
     font-size: 18px;
     line-height: 1.55;
   }
@@ -63,14 +63,14 @@
     padding-right: 24px;
     padding-bottom: 20px;
     padding-left: 24px;
-    background-color: var(--third-text-color);
+    background-color: $third-text-color;
     border-right: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
   }
   
   .gallery__item {
-    color: var(--main-text-color);
+    color: $main-text-color;
     font-family: Roboto;
     font-weight: bold;
     font-size: 18px;
@@ -79,7 +79,7 @@
     margin-bottom: 4px;
   }
   .gallery__text {
-    color: var(--second-text-color);
+    color: $second-text-color;
     font-family: Roboto;
     font-weight: normal;
     font-size: 16px;

@@ -9,26 +9,26 @@
     padding-bottom: 6px;
     padding-left: 22px;
     border-radius: 4px;
-    color: var(--main-text-color);
+    color: $main-text-color;
     font-family: Roboto;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
     background-color: #f5f4fa;
-    transition: color 250ms var(--animation-cubic-bezier),
-    background-color 250ms var(--animation-cubic-bezier);
+    transition: color 250ms $animation-cubic-bezier,
+    background-color 250ms $animation-cubic-bezier;
     cursor: pointer;
   }
   .hero__btn:focus {
-    color: var(--third-text-color);
-    background-color: var(--acent-color);
+    color: $third-text-color;
+    background-color: $acent-color;
   }
   .hero__item:not(:last-child) {
     margin-right: 8px;
   }
   
   .hero__btn:hover {
-    color: var(--third-text-color);
-    background-color: var(--acent-color);
+    color: $third-text-color;
+    background-color: $acent-color;
   }
