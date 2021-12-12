@@ -14,11 +14,11 @@
   .is-hidden {
     opacity: 0;
     pointer-events: none;
-  }
   
-  .is-hidden .modal {
+  
+  & .modal {
     transform: translate(-50%, -50%) scale(1.2);
-  }
+  }}
   
   .modal {
     position: absolute;
@@ -33,9 +33,9 @@
     border-radius: 4px;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms $animation-cubic-bezier;
-  }
   
-  .modal__btn {
+  
+  &__btn {
     display: flex;
     margin-left: auto;
     margin-right: 8px;
@@ -50,15 +50,15 @@
   
     cursor: pointer;
     transition: transform 250ms $animation-cubic-bezier;
-  }
+  }}
   
   .modal__svg {
     width: 18px;
     height: 18px;
     transition: fill 250ms $animation-cubic-bezier;}
-  .modal__svg:hover{
+  &:hover{
     fill:$acent-color;
-    
+  }
   }
   
   .form{
@@ -72,20 +72,20 @@
     
       min-width: 448px;
       
-  }
-     .form__label{
+  
+     &__label{
       position: relative;
       margin-bottom: 10px;
       
     }
-    .form__span{
+    &__span{
       display: block;
     }
     
-  .form__title{
+  &__title{
     margin-bottom: 12px;
   }
-    .form__svg{
+    &__svg{
       position: absolute;
      display: block;
      left:15px;
@@ -94,29 +94,27 @@
   
      
     }
-    .form__span{
+    &__span{
       margin-bottom: 4px;
     }
-    .form__input{
-      padding-left: 42px;
-      padding-right: 10px;
-      padding-bottom: 12px;
-      padding-top: 12px;
-      fill: $main-text-color;
-  
-      transition: fill 250ms $animation-cubic-bezier;
-  
-    }
-  
     
-  .form__label:focus-within > .form__svg {
+    
+  &__label:focus-within > .form__svg {
     fill: $acent-color;
-  }
-  
-  .form__input:hover,
-  .form__input:focus {
+  }}
+  .form__input{
+    padding-left: 42px;
+    padding-right: 10px;
+    padding-bottom: 12px;
+    padding-top: 12px;
+    fill: $main-text-color;
+
+    transition: fill 250ms $animation-cubic-bezier;
+
+    &:hover,
+  &:focus {
     border-color: $acent-color;
-  }
+  }}
   
   .form__label:hover .form__svg {
     fill: $acent-color;
@@ -140,18 +138,15 @@
       padding-right: 16px;
       resize: none;
       transition: border-color 250ms $animation-cubic-bezier;
-    }
-   
-  
-  
-  .form__textarea:hover,
-  .form__textarea:focus {
+      
+  &:hover,
+  &:focus {
     border-color: $acent-color;
   }
   
-  .form__textarea::placeholder {
+  &::placeholder {
     color: inherit;
-  }
+  }}
   
     
     .checkbox {
@@ -175,8 +170,8 @@
   .form__svg{
     width: 18px;
     height: 18px;
-  }
-  .form__svg-sub {
+  
+  &-sub {
     width: 16px;
     height: 15px;
     margin-right: 8px;
@@ -187,7 +182,7 @@
   
     transition: background-color 250ms $animation-cubic-bezier,
       fill 250ms $animation-cubic-bezier, border-color 250ms $animation-cubic-bezier;
-  }
+  }}
   
   .form__checkbox:checked + .form-svg-sub {
     border-color: transparent;
@@ -205,9 +200,8 @@
   .form__link {
     position: relative;
     color: #2196f3;
-  }
-  
-  .form__link::after {
+    
+  &::after {
     content: '';
   
     position: absolute;
@@ -218,7 +212,7 @@
     width: 100%;
     height: 1px;
     background-color: #2196f3;
-  }
+  }}
   
   .form__block {
     display: flex;
@@ -236,7 +230,7 @@
   }
   
   .form__btn:hover,
-  .form__btn:focus {
+  &:focus {
     background-color: #188ce8;
   
   }
