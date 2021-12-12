@@ -22,14 +22,14 @@
   
   &:focus {
     color: $third-text-color;
-    background-color: $acent-color;
-    
-  }}
+    background-color: $acent-color;}
+    &:hover {
+      color: $third-text-color;
+      background-color: $acent-color;
+    }
+  }
   .hero__item:not(:last-child) {
     margin-right: 8px;
   }
   
-  .hero__btn:hover {
-    color: $third-text-color;
-    background-color: $acent-color;
-  }
+ 

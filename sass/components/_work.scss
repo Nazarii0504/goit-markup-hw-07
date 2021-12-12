@@ -2,10 +2,11 @@
     display: flex;
     padding-top: 0;
     width: calc((100% - 60) / 3);
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
   }
-  .work-content--dis:not(:last-child) {
-    margin-right: 30px;
-  }
+  
   
   
   

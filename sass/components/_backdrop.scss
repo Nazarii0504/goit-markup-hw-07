@@ -14,12 +14,13 @@
   .is-hidden {
     opacity: 0;
     pointer-events: none;
+    & .modal {
+      transform: translate(-50%, -50%) scale(1.2);
+    }
+    
   }
   
-  .is-hidden .modal {
-    transform: translate(-50%, -50%) scale(1.2);
-  }
-  
+ 
   .modal {
     position: absolute;
     top: 50%;
@@ -33,24 +34,25 @@
     border-radius: 4px;
     transform: translate(-50%, -50%) scale(1);
     transition: transform 250ms $animation-cubic-bezier;
+    &__btn {
+      display: flex;
+      margin-left: auto;
+      margin-right: 8px;
+      margin-top: 8px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      padding-left: 6px;
+      padding-right: 6px;
+      background-color: transparent;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 50%;
+    
+      cursor: pointer;
+      transition: transform 250ms $animation-cubic-bezier;
+    }
   }
   
-  .modal__btn {
-    display: flex;
-    margin-left: auto;
-    margin-right: 8px;
-    margin-top: 8px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 6px;
-    padding-right: 6px;
-    background-color: transparent;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    border-radius: 50%;
   
-    cursor: pointer;
-    transition: transform 250ms $animation-cubic-bezier;
-  }
   
   .modal__svg {
     width: 18px;
@@ -140,18 +142,20 @@
       padding-right: 16px;
       resize: none;
       transition: border-color 250ms $animation-cubic-bezier;
+      &:hover,
+      &:focus {
+        border-color: $acent-color;
+      }
+      &::placeholder {
+        color: inherit;
+      }
     }
    
   
   
-  .form__textarea:hover,
-  .form__textarea:focus {
-    border-color: $acent-color;
-  }
   
-  .form__textarea::placeholder {
-    color: inherit;
-  }
+  
+  
   
     
     .checkbox {
@@ -175,25 +179,26 @@
   .form__svg{
     width: 18px;
     height: 18px;
+    &-sub {
+      width: 16px;
+      height: 15px;
+      margin-right: 8px;
+    
+      border: 2px solid  #212121;
+      border-radius: 2px;
+      fill: transparent;
+    cursor: pointer;
+      transition: background-color 250ms $animation-cubic-bezier,
+        fill 250ms $animation-cubic-bezier, border-color 250ms $animation-cubic-bezier;
+    }
   }
-  .form__svg-sub {
-    width: 16px;
-    height: 15px;
-    margin-right: 8px;
   
-    border: 2px solid  #212121;
-    border-radius: 2px;
-    fill: transparent;
-  cursor: pointer;
-    transition: background-color 250ms $animation-cubic-bezier,
-      fill 250ms $animation-cubic-bezier, border-color 250ms $animation-cubic-bezier;
-  }
   
   .form__checkbox:checked + .form__svg-sub {
     border-color: transparent;
   
-    background-color: #2196f3;
-    fill: #ffffff;
+    background-color:$acent-color;
+    fill:$third-text-color;
   }
   
   .form__text {
@@ -204,7 +209,7 @@
   
   .form__link {
     position: relative;
-    color: #2196f3;
+    color: $acent-color;
   }
   
   .form__link::after {
@@ -217,7 +222,7 @@
     display: inline-block;
     width: 100%;
     height: 1px;
-    background-color: #2196f3;
+    background-color:$acent-color;
   }
   
   .form__block {
