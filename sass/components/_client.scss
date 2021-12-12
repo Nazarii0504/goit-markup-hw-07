@@ -1,8 +1,8 @@
 .client {
     display: flex;
     justify-content: center;
-  
-  &__link {
+  }
+  .client__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -14,12 +14,11 @@
   transition: fill 250ms $animation-cubic-bezier,
   border-color 250ms $animation-cubic-bezier;
   }
-}
   .section-client {
     margin-bottom: 50px;
   }
   .client__link--show:focus,
-  &:hover {
+  .client__link--show:hover {
     fill: $acent-color;
     border-color: $acent-color;
   }
