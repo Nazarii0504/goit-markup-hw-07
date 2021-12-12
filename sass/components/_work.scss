@@ -42,7 +42,7 @@
   }
   .work-content__list {
     width: calc((100% -60px) / 3);
-  }
-  .work-content__list:not(:last-child) {
+  
+  &:not(:last-child) {
     margin-right: 30px;
-  }
+  }}

@@ -395,7 +395,7 @@ body {
   margin-right: 50px;
 }
 
-.navig__item {
+.navig__item:not(:last-child) {
   position: relative;
 }
 
@@ -424,8 +424,7 @@ body {
   letter-spacing: 0.02em;
 }
 
-.navig-link:hover,
-.navig-link:focus {
+.navig__link:hover, .navig__link:focus {
   color: #2196f3;
 }
 
@@ -479,7 +478,8 @@ body {
   color: #2196f3;
 }
 
-.address__link {
+.address__link:hover,
+.address__link:focus {
   color: #757575;
   font-weight: 500;
   line-height: 1.14;
@@ -677,7 +677,7 @@ body {
   margin-right: 30px;
 }
 
-.team__list {
+.team__list:not(:last-child) {
   background-color: #ffffff;
 }
 

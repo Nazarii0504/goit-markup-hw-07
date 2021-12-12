@@ -12,22 +12,22 @@
   }
   .navig__item:not(:last-child) {
     margin-right: 50px;
-  }
-  .navig__item{
+  
+  &{
     position: relative;
-  }
+  }}
   .logo {
     font-family: Raleway;
     font-weight: bold;
     font-size: 26px;
     line-height: 1.19;
-  }
-  .logo__left {
+  
+  &__left {
     color: $acent-color;
   }
-  .logo__right {
+&__right {
     color: $other-color;
-  }
+  }}
   .navig__link {
     display: block;
     padding-top: 32px;
@@ -36,12 +36,12 @@
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
-  }
-  .navig-link:hover,
-  .navig-link:focus {
+  
+  &:hover,
+  &:focus {
     color: $acent-color;
   }
-  
+}
   
   .current {
     color:$acent-color;
@@ -80,21 +80,21 @@
   .address__list {
     display: flex;
     align-items: center;
-  }
-  .address__list:not(:last-child) {
+  
+  &:not(:last-child) {
     margin-right: 43px;
-  }
+  }}
   .address__link:hover,
   .address__link:focus {
     color: $acent-color;
-  }
-  .address__link {
+  
+  & {
     color: $second-text-color;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     transition: color 250ms $animation-cubic-bezier;
-  }
+  }}
   .address__email {
     vertical-align: middle;
     width: 16px;

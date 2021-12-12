@@ -3,10 +3,10 @@
   }
   .about__list {
     width: calc((100% - 90px) / 4);
-  }
-  .about__list:not(last-child) {
+  
+  &:not(last-child) {
     margin-right: 30px;
-  }
+  }}
   .about__item {
     margin-bottom: 10px;
     color: $main-text-color;

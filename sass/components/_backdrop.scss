@@ -55,11 +55,11 @@
   .modal__svg {
     width: 18px;
     height: 18px;
-    transition: fill 250ms $animation-cubic-bezier;}
-  .modal__svg:hover{
+    transition: fill 250ms $animation-cubic-bezier;
+  &:hover{
     fill:$acent-color;
     
-  }
+  }}
   
   .form{
       

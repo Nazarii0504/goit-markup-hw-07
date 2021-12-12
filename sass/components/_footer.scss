@@ -28,10 +28,10 @@
     font-size: 14px;
     line-height: 2;
     transition: color 250ms $animation-cubic-bezier;
-  }
-  .product__text:hover {
+  
+  &:hover {
     color: $third-text-color;
-  }
+  }}
   .product__text:focus {
     color: $third-text-color;
   }
@@ -42,10 +42,10 @@
     line-height: 2;
     color: $fon-color;
     transition: color 250ms $animation-cubic-bezier;
-  }
-  .product__link:hover {
+  
+  &:hover {
     color: $third-text-color;
-  }
+  }}
   .product__link:focus {
     color: $third-text-color;
   }
@@ -56,13 +56,13 @@
     line-height: 2;
     color: $fon-color;
     transition: color 250ms $animation-cubic-bezier;
-  }
-  .product__phone:hover {
+  
+  &:hover {
     color: $third-text-color;
   }
-  .product__phone:focus {
+  &:focus {
     color: $third-text-color;
-  }
+    }}
   .footer__items{
     width: 206px;
     
