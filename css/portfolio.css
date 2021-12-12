@@ -478,8 +478,7 @@ body {
   color: #2196f3;
 }
 
-.address__link:hover,
-.address__link:focus {
+.address__link {
   color: #757575;
   font-weight: 500;
   line-height: 1.14;

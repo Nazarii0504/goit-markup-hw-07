@@ -5,11 +5,11 @@
   display: flex;
 }
 .team__list:not(:last-child) {
-  margin-right: 30px;
+  margin-right: 30px;}
 
-& {
+  .team__list {
   background-color: $third-text-color;
-}}
+}
 .team__list--img {
   margin-bottom: 30px;
 }

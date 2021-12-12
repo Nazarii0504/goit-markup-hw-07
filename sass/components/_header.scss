@@ -86,15 +86,15 @@
   }}
   .address__link:hover,
   .address__link:focus {
-    color: $acent-color;
+    color: $acent-color;}
   
-  & {
+    .address__link{
     color: $second-text-color;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
     transition: color 250ms $animation-cubic-bezier;
-  }}
+  }
   .address__email {
     vertical-align: middle;
     width: 16px;
