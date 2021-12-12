@@ -6,21 +6,21 @@
     margin-bottom: 20px;
     display: block;
   }
-  .logotype-left {
+  .product__logotype-left {
     color: var(--acent-color);
     font-family: Raleway;
     font-weight: bold;
     font-size: 26px;
     line-height: 1.19;
   }
-  .logotype-right {
+  .product__logotype-right {
     color: var(--third-text-color);
     font-family: Raleway;
     font-weight: bold;
     font-size: 26px;
     line-height: 1.19;
   }
-  .bottom-text {
+  .product__text {
     color: var(--fon-color);
     font-family: Roboto;
     font-style: normal;
@@ -29,13 +29,13 @@
     line-height: 2;
     transition: color 250ms var(--animation-cubic-bezier);
   }
-  .bottom-text:hover {
+  .product__text:hover {
     color: var(--third-text-color);
   }
-  .bottom-text:focus {
+  .product__text:focus {
     color: var(--third-text-color);
   }
-  .bottom-link {
+  .product__link {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -43,13 +43,13 @@
     color: var(--fon-color);
     transition: color 250ms var(--animation-cubic-bezier);
   }
-  .bottom-link:hover {
+  .product__link:hover {
     color: var(--third-text-color);
   }
-  .bottom-link:focus {
+  .product__link:focus {
     color: var(--third-text-color);
   }
-  .bottom-phone {
+  .product__phone {
     font-family: Roboto;
     font-style: normal;
     font-weight: normal;
@@ -57,38 +57,38 @@
     color: var(--fon-color);
     transition: color 250ms var(--animation-cubic-bezier);
   }
-  .bottom-phone:hover {
+  .product__phone:hover {
     color: var(--third-text-color);
   }
-  .bottom-phone:focus {
+  .product__phone:focus {
     color: var(--third-text-color);
   }
-  .bottom-container-link{
+  .footer__items{
     width: 206px;
     
   }
   
-  .bottom-container {
+  .bottom__container {
     display: flex;
   align-items:baseline;
   justify-content: space-between;
   }
   
-  .footer-general {
+  .footer {
     display: flex;
     padding-top: 20px;
   }
-  .bottom-address-text {
+  .footer__text {
       width: 700px;
     line-height: 1.72;
     size: 14px;
     color: var(--third-text-color);
   }
-  .footer-block:not(:last-child)
+  .footer__block:not(:last-child)
   {
     margin-right: 10px;
   }
-  .footer-block-link {
+  .footer__link {
     display: flex;
     border-radius: 50%;
     width: 44px;
@@ -100,15 +100,15 @@
    transition: background-color 250ms var(--animation-cubic-bezier),
    fill 250ms var(--animation-cubic-bezier),box-shadow 250ms var(--animation-cubic-bezier)
   }
-  .footer-block-link:hover,
-  .footer-block-link:focus {
+  .footer__link:hover,
+  .footer__link:focus {
     background-color: var(--acent-color);
     fill: var(--third-text-color);
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
       0px 2px 2px rgba(0, 0, 0, 0.12);
   }
   
-  .footer-icon {
+  .footer__icon {
     width: 20px;
     height: 20px;}
   
@@ -123,24 +123,22 @@
   
   
   
-    .third-text {
+    .third__text {
       margin-bottom: 20px;
-    
-      
-    
-      font-weight: 700px;
-      font-size: 14px;
+         
+       weight: 700px;
+      size: 14px;
       line-height: 1.14;
       text-transform: uppercase;
       color: var(--third-text-color);
       
     }
     
-    .third-form-inner {
+    .third-form__inner {
       margin-right: 12px;
     }
     
-    .third-form-input {
+    .third-form__input {
       padding-top: 15px;
       padding-right: 5px;
       padding-bottom: 15px;
@@ -161,7 +159,7 @@
       filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     }
     
-    .third-form-btn {
+    .third-form__btn {
       display: inline-flex;
       align-items: center;
     
@@ -173,7 +171,7 @@
       border: 1px solid transparent;
     }
     
-    .third-form-svg {
+    .third-form__svg {
       margin-left: 10px;
     
       width: 24px;
