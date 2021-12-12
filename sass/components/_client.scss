@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
   }
-  .client-block-link {
+  .client__link {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,16 +17,16 @@
   .section-client {
     margin-bottom: 50px;
   }
-  .client-block-link:focus,
-  .client-block-link:hover {
+  .client__link--show:focus,
+  .client__link--show:hover {
     fill: var(--acent-color);
     border-color: var(--acent-color);
   }
-  .client-block:not(:last-child) {
+  .client__block:not(:last-child) {
     margin-right: 30px;
   }
   
-  .client-icon {
+  .client__icon {
     width: 106px;
     height: 60px;
   }
