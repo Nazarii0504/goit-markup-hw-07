@@ -3,13 +3,11 @@
     justify-content: center;
   }
   .client__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include aligin-list();
     width: 170px;
     height: 92px;
-    border: 1px solid #afb1b8;
-    fill: #afb1b8;
+    border: 1px solid $fill;
+    fill:$fill;
   border-radius: 4px;
   transition: fill 250ms $animation-cubic-bezier,
   border-color 250ms $animation-cubic-bezier;

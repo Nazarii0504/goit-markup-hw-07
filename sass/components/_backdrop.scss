@@ -159,13 +159,9 @@
   
     
     .checkbox {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 30px;
-        
-    
-  }
+      @include aligin-list();
+       margin-bottom: 30px;
+       }
   .form__checkbox{
     position: absolute;
     width: 1px;
